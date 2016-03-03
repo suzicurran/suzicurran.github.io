@@ -1,18 +1,32 @@
-<i>DGMD E-15 journal, woo!</i> Now in reverse chronological order for ease of finding new entries.
+<style>
+.imagebox {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 90%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #FFFFFF;  
+}
+
+.boxedimage {
+
+}
+</style>
+
+<B><u>DGMD E-15 journal:</b></u> Now in reverse chronological order for ease of finding new entries.
 <br>
-<i>For Thurs, March 3...</i>
-<br>
-<strike><a href="http://codepen.io/suzicurran/pen/zqYjGX">Random assigment of colors to "pegs" for Mastermind.</a></strike>
-<br>
-<a href="http://codepen.io/suzicurran/pen/GZRPPy">New version: now looking much nicer! Added a legend of all the colors currently live.</a>
+<br><i>For Thurs, March 3...</i>
+<br><strike><a href="http://codepen.io/suzicurran/pen/zqYjGX">Random assigment of colors to "pegs" for Mastermind.</a></strike>
+<br><a href="http://codepen.io/suzicurran/pen/GZRPPy">New version: now looking much nicer! Added a legend of all the colors currently live.</a>
 <br>
 <br><i>For Thurs, Feb 25...</i>
-<br>
-You folks have already seen my new <a href="http://www.twitter.com/suzicurranbot">twitterbot</a>, and <a href="./twitterbot mockup.png">here's</a> a mockup of the project with next steps.
+<br>You folks have already seen my new <a href="http://www.twitter.com/suzicurranbot">twitterbot</a>, and <a href="./twitterbot mockup.png">here's</a> a mockup of the project with next steps.
 <br>
 <br><i>For Thurs, Feb 18...</i>
-<br>
-<script>
+<br><script>
   function jsonFlickrApi(rsp) {
     window.rsp = rsp;
     var s = "";
@@ -22,8 +36,7 @@ You folks have already seen my new <a href="http://www.twitter.com/suzicurranbot
     
     for (var i=0; i < rsp.photos.photo.length; i++) {
       photo = rsp.photos.photo[i];
-      t_url = "http://farm" + photo.farm + ".static.flickr.com/" + 
-        photo.server + "/" + photo.id + "_" + photo.secret + "_" + "t.jpg";
+      t_url = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "t.jpg";
       p_url = "http://www.flickr.com/photos/" + photo.owner + "/" + photo.id;
       s +=  '<a href="' + p_url + '">' + '<img alt="'+ photo.title + 
         '"src="' + t_url + '"/>' + '</a>';
@@ -65,10 +78,7 @@ Processing.js makes working with art easier? Tell me more...
 <br>
 Whoever these w3schools people are, they rock.
 <br>
-<img src="./day one notes.png" style="max-width:800px;">
-<br>
+<div class=imagebox><img src="./day one notes.png" style="max-width:800px;">
 <img src="./Korngold penny.png" style="max-width:800px;">
-<br>
 <img src="./pixel ruler.png" style="max-width:800px;">
-<br>
-
+</div>
