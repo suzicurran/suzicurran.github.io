@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RB Boston Installfest - Win 7+ Solutions</title>
+</head>
+<body>
+<h1>Windows Errors & Possible Solutions</h1>
+<h2>To supplement the <a href="http://docs.railsbridgeboston.org/installfest/set_up_virtual_machine">RailsBridge Boston Installfest - Set Up Virtual Machine</a> walkthrough</h2>
+<br>
+<h3>If <i>vagrant box add railsbridge201506 ./railsbridgevm-2015-06.box</i> returns <i><b><font color="red">The executable 'bsdtar' Vagrant is trying to run was not found in the %PATH% variable</i></font></b>:</h3></p>
+<p>You may first need to modify your "Environment Variables" system properties. (The best way to access this is to open your Start Menu and search for it.) These preferences may differ slightly depending on the version of Windows you have.</p>
+<p><u>If you are using Windows 10</u>, once you have the "Environment Variables" window up, you should see a pre-existing "Path" under "User variables". Click once to select this, hit "Edit" to see the existing values for it, and then hit "New..." and paste in <i>C:\HashiCorp\Vagrant\embedded\mingw\bin</i>.</p>
+<p><u>If you are using Windows 7</u>, once you have the "Environment Variables" window up, select "New..." under "User variables". You should be prompted to give the new variable a name, "Path", and should use <i>C:\HashiCorp\Vagrant\embedded\mingw\bin</i> as your variable value.</p>
+<p>Be sure to hit "OK" when closing each window to save this change.</p>
+<p>You should then be able to relaunch Git Bash, use <i>cd workspace</i> to return to the directory, and successfully run <i>vagrant box add railsbridge201506 ./railsbridgevm-2015-06.box</i>.</p>
+<br>
+<h3>If <i>vagrant up</i> returns <i><b><font color="red">[add me!]</i></b></font>:</h3></p>
+<p>You may need to uninstall the version of VirtualBox we have been using (4.3.20) and replace it with a slightly newer version (4.3.36).</p>
+<p>The installer for VirtualBox 4.3.36 for Windows can be downloaded <a href="http://download.virtualbox.org/virtualbox/4.3.36/VirtualBox-4.3.36-105129-Win.exe">from Oracle</a>.
+<p>Before running the installer, you'll need to use the Add/Remove Programs tool (which can be easily accessed by search from the Start Menu) to uninstall the version you have already have. It will likely appear in the list of programs to uninstall as "Oracle's VirtualBox".</p>
+<p>If the previous version of VirtualBox has been uninstalled, you can launch the .exe you downloaded for VirtualBox 3.3.36 and install it just as you did with the previous version. (Windows may initially attempt to halt installation but you should have the option to override it.)</p>
+<p>Once VirtualBox 3.3.36 has been successfully installed, should then be able to relaunch Git Bash, use <i>cd workspace</i> to return to the directory, and successfully run <i>vagrant up</i>!</p>
+<br>
+<h3>04/01/2016</h3>
+</body>
+</html>
